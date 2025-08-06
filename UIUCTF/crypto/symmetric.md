@@ -10,7 +10,8 @@
 
 > I'm using four primes to encrypt my flag, so I'm only giving you three hints - can you decrypt the flag?
 
-![meme](https://www.google.com/imgres?q=you%20were%20this%20close%20to%20perfection%20meme&imgurl=https%3A%2F%2Fpreview.redd.it%2Fgumqper180661.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3Dc4d6cd402d1601235f41d9ca46f6d54a033b6d01&imgrefurl=https%3A%2F%2Fwww.reddit.com%2Fr%2FSequelMemes%2Fcomments%2Fkfsttp%2Fwe_were_this_close_to_perfection%2F&docid=tg4NiE3kf0mIKM&tbnid=d8270LoWh8DwyM&vet=12ahUKEwit5-aEqfaOAxXWSmwGHeEwGiEQM3oECBUQAA..i&w=640&h=360&hcb=2&ved=2ahUKEwit5-aEqfaOAxXWSmwGHeEwGiEQM3oECBUQAA)
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/19b3060b-14a1-41c9-9d53-cc9edc3fd055" />
+
 
 ---
 
@@ -129,3 +130,4 @@ Flag - uiuctf{5yMmeTRiC_P0lyS_FoRM_A_B4S15}
 
 
 ---
+
