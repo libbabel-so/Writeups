@@ -10,7 +10,8 @@
 
 > Normal RSA uses two primes - that's too few in my opinion, so I've added some more.
 
-:)  Cool idea BUT.......   
+<p align = "center">	<img width="805" height="548" alt="{4588E2EC-2272-4DC0-ADC0-EFB560262C7F}" src="https://github.com/user-attachments/assets/0c44f7ab-b1b3-44dd-8ed3-1d9a97b0a66e" /> </p>
+
 
 ---
 
@@ -127,5 +128,6 @@ Now this challenge was clearly aimed at beginners, so here's a few things you ca
 - The key to solving this challenge was understanding how RSA works internally. I would suggest taking a little time to grasp the math behind it properly, cos once you know **how** and **why** it works, it's like looking into a transparent machine.
 - Sort of adding on to the last point, also pay attention to why something is used the way it is. For example, this challenge is much more trivial if you know that we need to use **large** primes for RSA vs just knowing you need to use primes.
 - And yeah, obviously, you get a new free site that might help you in future challenges - [factordb.com](factordb.com)
+
 
 ---
