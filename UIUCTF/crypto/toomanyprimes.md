@@ -131,3 +131,5 @@ Now this challenge was clearly aimed at beginners, so here's a few things you ca
 
 
 ---
+
+<p align = "center">	<img width="645" height="407" alt="{586F6C4F-A20C-4405-B938-C02EAD4DC0EB}" src="https://github.com/user-attachments/assets/c88f02a3-38ec-40a0-bb44-a67775f3d9b2" /> </p>
