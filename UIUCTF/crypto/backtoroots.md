@@ -98,3 +98,6 @@ Flag -  uiuctf{SQu4Re_Ro0T5_AR3nT_R4nD0M}
 ```
 
 ---
+
+<p align="center"> <img width="1165" height="865" alt="{AAA0FF22-C901-4410-8DAF-CC3E1EB1036D}" src="https://github.com/user-attachments/assets/f4dcb863-2318-48dc-87ec-d5f7ef41b52c" /> </p>
+
