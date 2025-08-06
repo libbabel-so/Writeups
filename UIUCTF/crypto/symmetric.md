@@ -10,6 +10,8 @@
 
 > I'm using four primes to encrypt my flag, so I'm only giving you three hints - can you decrypt the flag?
 
+![meme](https://www.google.com/imgres?q=you%20were%20this%20close%20to%20perfection%20meme&imgurl=https%3A%2F%2Fpreview.redd.it%2Fgumqper180661.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3Dc4d6cd402d1601235f41d9ca46f6d54a033b6d01&imgrefurl=https%3A%2F%2Fwww.reddit.com%2Fr%2FSequelMemes%2Fcomments%2Fkfsttp%2Fwe_were_this_close_to_perfection%2F&docid=tg4NiE3kf0mIKM&tbnid=d8270LoWh8DwyM&vet=12ahUKEwit5-aEqfaOAxXWSmwGHeEwGiEQM3oECBUQAA..i&w=640&h=360&hcb=2&ved=2ahUKEwit5-aEqfaOAxXWSmwGHeEwGiEQM3oECBUQAA)
+
 ---
 
 ## Files Provided
@@ -44,7 +46,7 @@ ct = 720607330561370237459911161481490697044029472780348552630924063963226757984
 
 ## What Do We Get From This
 
-The implementation is that of a typical RSA, except that the key is the product of 4 primes instead of 2. If you are not sure about how to deal with more than 2 prime factors, check out my writeup for [too many primes]().
+The implementation is that of a typical RSA, except that the key is the product of 4 primes instead of 2. If you are not sure about how to deal with more than 2 prime factors, check out my writeup for [too many primes](https://github.com/libbabel-so/Writeups/blob/main/UIUCTF/crypto/toomanyprimes.md).
 
 The leak is said to be only 3 relations (`h1`, `h2`, `h3`) of the primes involved (`p`, `q`, `r`, `s`) as follows.
 - `h1 = p + q + r + s`
@@ -124,5 +126,6 @@ print("Flag -",long_to_bytes(pow(ct,d,n)).decode())
 ```
 Flag - uiuctf{5yMmeTRiC_P0lyS_FoRM_A_B4S15}
 ```
+
 
 ---
