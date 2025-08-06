@@ -10,7 +10,7 @@
 
 > I'm using four primes to encrypt my flag, so I'm only giving you three hints - can you decrypt the flag?
 
-<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/19b3060b-14a1-41c9-9d53-cc9edc3fd055" />
+<p align="center"><img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/19b3060b-14a1-41c9-9d53-cc9edc3fd055" /></p>
 
 
 ---
@@ -130,4 +130,5 @@ Flag - uiuctf{5yMmeTRiC_P0lyS_FoRM_A_B4S15}
 
 
 ---
+
 
