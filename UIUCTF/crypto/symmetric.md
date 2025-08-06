@@ -131,4 +131,6 @@ Flag - uiuctf{5yMmeTRiC_P0lyS_FoRM_A_B4S15}
 
 ---
 
+<p align="center"> <img width="655" height="494" alt="{34D26BE3-AD9E-4F9E-B613-834BFAA4C4D8}" src="https://github.com/user-attachments/assets/f267a024-97ed-4e66-9942-9bc5c100c7e3" /> </p>
+
 
