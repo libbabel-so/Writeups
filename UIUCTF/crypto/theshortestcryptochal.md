@@ -108,4 +108,7 @@ Now this challenge was obviously aimed at beginners, so here's a few things you 
 - As I mentioned before, AES is secure. Especially if it is not constructed manually for the challenge. Seeing an AES encryption is an indicator that there is nothing you can do about the encryption process itself, try to find a weaknesses around it (in this case, the key).
 - This method has a few similarities to a very useful cryptographic attack called [Meet in the Middle](https://www.baeldung.com/cs/security-meet-in-the-middle-attack). Check it out, it's a very sweet and easy to understand optimization.
 
+
 ---
+
+<p align="center"> <img width="660" height="500" alt="{CE415D69-02C6-4157-9359-02D0EB0BE976}" src="https://github.com/user-attachments/assets/475e1c8b-a08f-4bc3-8a96-60db7f6a5ec6" /> </p>
