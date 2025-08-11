@@ -50,11 +50,11 @@ The decimal portion of the square root of our **VERY SECRET KEY**
 
 Remember the beautiful little formula taught to us back in middle school? 
 
-` (a + b)^2 = a^2 + b^2 + 2*a*b `
+<p align = "center"> $(a + b)^2 = a^2 + b^2 + 2ab$ </p>
 
 "When will we ever use this in real life?"  **HERE!!**
 
-We know that our key is between `10^10` and `10^11`, so its root must be between `10^5` and `3.2 x 10^5`.
+We know that our key is between $10^{10}$ and $10^{11}$, so its root must be between $10^5$ and $3.2*10^5$.
 
 We can EASILY go through all of these values in less than a second. So we start picking values for the integer part of this square root, pair it up with the given fractional part, and try to use it as the key to decrypt the ciphertext.
 
@@ -100,4 +100,5 @@ Flag -  uiuctf{SQu4Re_Ro0T5_AR3nT_R4nD0M}
 ---
 
 <p align="center"> <img width="1165" height="865" alt="{AAA0FF22-C901-4410-8DAF-CC3E1EB1036D}" src="https://github.com/user-attachments/assets/f4dcb863-2318-48dc-87ec-d5f7ef41b52c" /> </p>
+
 
