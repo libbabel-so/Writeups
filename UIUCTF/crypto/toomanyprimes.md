@@ -76,7 +76,7 @@ Now here comes the part which makes us able to break this,
 
 <p align="center"> p = randprime(2**127, 2**128) </p>
 
-This is much smaller than the standard 1024 bit numbers and that implies it is very highly likely that this number's factors have been found. A very nice place to check for factors of big numbers is [factordb.com](factordb.com). Plugging in the given $n$ gives us its prime factorization, but honestly, I only need the first one, I can get the rest like in the given code.
+This is much smaller than the standard 1024 bit numbers and that implies it is very highly likely that this number's factors have been found. A very nice place to check for factors of big numbers is [factordb](https://factordb.com/). Plugging in the given $n$ gives us its prime factorization, but honestly, I only need the first one, I can get the rest like in the given code.
 
 From there, I keep finding the next primes as long as they divide $n$.
 
@@ -133,4 +133,5 @@ Now this challenge was clearly aimed at beginners, so here's a few things you ca
 ---
 
 <p align = "center">	<img width="645" height="407" alt="{586F6C4F-A20C-4405-B938-C02EAD4DC0EB}" src="https://github.com/user-attachments/assets/c88f02a3-38ec-40a0-bb44-a67775f3d9b2" /> </p>
+
 
