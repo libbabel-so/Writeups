@@ -49,10 +49,12 @@ ct = 720607330561370237459911161481490697044029472780348552630924063963226757984
 
 The implementation is that of a typical RSA, except that the key is the product of 4 primes instead of 2. If you are not sure about how to deal with more than 2 prime factors, check out my writeup for [too many primes](https://github.com/libbabel-so/Writeups/blob/main/UIUCTF/crypto/toomanyprimes.md).
 
-The leak is said to be only 3 relations (`h1`, `h2`, `h3`) of the primes involved (`p`, `q`, `r`, `s`) as follows.
-- `h1 = p + q + r + s`
-- `h2 = p^2 + q^2 + r^2 + s^2`
-- `h3 = p^3 + q^3 + r^3 + s^3`
+The leak is said to be only 3 relations ($h_1,h_2,h_3$) of the primes involved ($p,q,r,s$) as follows.
+<p align="center"> $h_1 = p + q + r + s$ </p>
+
+<p align="center">$h_2 = p^2 + q^2 + r^2 + s^2$</p>
+
+<p align="center">$h_3 = p^3 + q^3 + r^3 + s^3$  </p>
 
 --- 
 
@@ -62,23 +64,23 @@ The idea behind this leak is to make you feel that there are insufficient equati
 
 This would have been impossible (or atleast very very hard) to solve if we indeed had only three relations, but there is one extra equation that may be overlooked but is hidden in plain sight!
 
-`n = p * q * r * s`
+<p align="center">$n = p \cdot q \cdot r \cdot s$</p>
 
-Using our basic polynomial knowledge, if I were to make a quartic polynomial with `p`, `q`, `r` and `s` as roots, it would be of the form
+Using our basic polynomial knowledge, if I were to make a quartic polynomial with $p, q, r$ and $s$ as roots, it would be of the form
 
-`f(x) = x^4 - b*x^3 + c*x^2 - d*x + e`
+<p align="center">$f(x) = x^4 - b \cdot x^3 + c \cdot x^2 - d \cdot x + e$</p>
 
 where - 
-- `b` = sum of roots
-- `c` = sum of roots taken 2 at a time
-- `d` = sum of roots taken 3 at a time
-- `e` = sum of roots taken 4 at a time (product of roots)
+- $b$ = sum of roots
+- $c$ = sum of roots taken 2 at a time
+- $d$ = sum of roots taken 3 at a time
+- $e$ = sum of roots taken 4 at a time (product of roots)
 
 And since we have 4 relations using the roots, we can define the needed value as follows - 
-- `b = h1`
-- `c = (h1^2 - h2)/2`
-- `d = (h1^3 - 3*h1*h2 + 2*h3)/6`
-- `e = n`
+<p align="center"> $b = h_1$ </p>
+<p align="center"> $c = \frac{1}{2}(h_1^2 - h_2)$</p>
+<p align="center"> $d = \frac{1}{6}{(h_1^3 - 3 \cdot h_1 \cdot h_2 + 2 \cdot h_3)}$</p>
+<p align="center"> $e = n$</p>
 
 (If you're new to this, grab a pen and paper and try to get these relations yourself as an exercise)
 
@@ -132,5 +134,6 @@ Flag - uiuctf{5yMmeTRiC_P0lyS_FoRM_A_B4S15}
 ---
 
 <p align="center"> <img width="655" height="494" alt="{34D26BE3-AD9E-4F9E-B613-834BFAA4C4D8}" src="https://github.com/user-attachments/assets/f267a024-97ed-4e66-9942-9bc5c100c7e3" /> </p>
+
 
 
