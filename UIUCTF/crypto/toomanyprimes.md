@@ -51,36 +51,36 @@ And the slightly smaller red flag - `p = randprime(2**127, 2**128)`
 ## The Maths
 A small overview of RSA for those who need it. We require -
 
-- A Message - `m`
-- Two Primes (usually atleast 1024 bits long) - `p,q`
-- A Public Key - `e`    (most commonly set to 65537)
+- A Message - $m$
+- Two Primes (usually atleast 1024 bits long) - $p,q$
+- A Public Key - $e$    (most commonly set to 65537)
 
 How does it work?
-- We define `n=p*q`
-- We also define the [Euler Totient Function](https://www.geeksforgeeks.org/dsa/eulers-totient-function/) of `n`, `phi = (p-1)*(q-1)`
-- We generate a [modular inverse](https://www.geeksforgeeks.org/dsa/multiplicative-inverse-under-modulo-m/) `d = e^-1 (mod phi)`
+- We define $n=p \cdot q$
+- We also define the [Euler Totient Function](https://www.geeksforgeeks.org/dsa/eulers-totient-function/) of $n$, $\phi = (p-1) \cdot (q-1)$
+- We generate a [modular inverse](https://www.geeksforgeeks.org/dsa/multiplicative-inverse-under-modulo-m/) $d \equiv e^{-1}\ mod(\phi)$
 
-- The ciphertext is given by `c = m^e (mod n)`
-- And decrypting the ciphertext is done by `m = c^d (mod n)`
+- The ciphertext is given by $c \equiv m^{e}\ mod (n)$
+- And decrypting the ciphertext is done by $m \equiv c^d\  mod (n)$
 
-Here, `n` and `e` are made public, along with the ciphertext `c`. Everything else is private. 
+Here, $n$ and $e$ are made public, along with the ciphertext $c$. Everything else is private. 
 
 So you may ask me, "Pastime, if I give out these important values, how exactly is RSA secure?"
 
-The most important part is the calculation of the private key `d` using `phi(n)` (which i have represented as just `phi`). What makes RSA secure is the fact that you need the factors of `n` to calculate `phi`, which in turn is a necessity to calculate `d`. It is extremely hard to factor huge numbers (If the factors themselves are ~1000 bits), which pretty much guarantees that if anybody has the value of `n`, they would still not be able to calculate `d`.
+The most important part is the calculation of the private key $d$ using $\phi(n)$ (which i have represented as just $\phi$). What makes RSA secure is the fact that you need the factors of $n$ to calculate $\phi$, which in turn is a necessity to calculate $d$. It is extremely hard to factor huge numbers (If the factors themselves are ~1000 bits), which pretty much guarantees that if anybody has the value of $n$, they would still not be able to calculate $d$.
 
-This challenge differs from the standard RSA system since it has more than 2 prime factors for `n`, but that just means that our formula for `phi` will be different. The rest of the process stays the same.
+This challenge differs from the standard RSA system since it has more than 2 prime factors for $n$, but that just means that our formula for $\phi$ will be different. The rest of the process stays the same.
 
 
 Now here comes the part which makes us able to break this,
 
-`p = randprime(2**127, 2**128)`
+<p align="center"> p = randprime(2**127, 2**128) </p>
 
-This is much smaller than the standard 1024 bit numbers and that implies it is very highly likely that this number's factors have been found. A very nice place to check for factors of big numbers is [factordb.com](factordb.com). Plugging in the given `n` gives us its prime factorization, but honestly, I only need the first one, I can get the rest like in the given code.
+This is much smaller than the standard 1024 bit numbers and that implies it is very highly likely that this number's factors have been found. A very nice place to check for factors of big numbers is [factordb.com](factordb.com). Plugging in the given $n$ gives us its prime factorization, but honestly, I only need the first one, I can get the rest like in the given code.
 
-From there, I keep finding the next primes as long as they divide `n`.
+From there, I keep finding the next primes as long as they divide $n$.
 
-The new `phi` can be represented as `(p1 - 1)*(p2 - 1)*(p3 - 1)...` (Check out the link above to understand why exactly it equates to that). Once we have the new `phi`, we can proceed with the usual steps of RSA.
+The new $\phi$ can be represented as $(p_1 - 1) \cdot (p_2 - 1) \cdot (p_3 - 1) \cdots$ (Check out the link above to understand why exactly it equates to that). Once we have the new $\phi$, we can proceed with the usual steps of RSA.
 
 ---
 
@@ -133,3 +133,4 @@ Now this challenge was clearly aimed at beginners, so here's a few things you ca
 ---
 
 <p align = "center">	<img width="645" height="407" alt="{586F6C4F-A20C-4405-B938-C02EAD4DC0EB}" src="https://github.com/user-attachments/assets/c88f02a3-38ec-40a0-bb44-a67775f3d9b2" /> </p>
+
